@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0p-37-m0G" customClass="SKView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0002.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-qq-5tk">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e7E-qq-5tk" secondAttribute="height" multiplier="3:2" id="6NW-Ij-cSm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="L0p-37-m0G" secondAttribute="trailing" id="FSh-0U-Mfl"/>
+                            <constraint firstItem="L0p-37-m0G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Q4w-EE-Cvu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e7E-qq-5tk" secondAttribute="bottom" id="TUT-LL-dF3"/>
+                            <constraint firstAttribute="trailing" secondItem="e7E-qq-5tk" secondAttribute="trailing" id="ahm-gw-NLn"/>
+                            <constraint firstItem="e7E-qq-5tk" firstAttribute="top" secondItem="L0p-37-m0G" secondAttribute="bottom" id="p97-EZ-5Ok"/>
+                            <constraint firstItem="e7E-qq-5tk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="svc-Y0-bzq"/>
+                            <constraint firstItem="L0p-37-m0G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yzd-3Y-sPA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="spriteKitView" destination="L0p-37-m0G" id="eaF-df-wa4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="58.920539730134934"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0002.JPG" width="4288" height="2848"/>
+    </resources>
 </document>

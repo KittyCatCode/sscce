@@ -15,6 +15,9 @@
 		C0CF61D81DA93A5F00840266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CF61D61DA93A5F00840266 /* LaunchScreen.storyboard */; };
 		C0CF61E31DA93A6000840266 /* SSCCETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF61E21DA93A6000840266 /* SSCCETests.m */; };
 		C0CF61EE1DA93A6100840266 /* SSCCEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF61ED1DA93A6100840266 /* SSCCEUITests.m */; };
+		C0CF61FD1DA9C28C00840266 /* ImageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF61FC1DA9C28C00840266 /* ImageScene.m */; };
+		C0CF61FF1DA9C4B900840266 /* IMG_0002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C0CF61FE1DA9C4B900840266 /* IMG_0002.JPG */; };
+		C0CF62011DA9C88A00840266 /* gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0CF62001DA9C88A00840266 /* gato.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		C0CF61E91DA93A6100840266 /* SSCCEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCCEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CF61ED1DA93A6100840266 /* SSCCEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCCEUITests.m; sourceTree = "<group>"; };
 		C0CF61EF1DA93A6100840266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CF61FB1DA9C28C00840266 /* ImageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScene.h; sourceTree = "<group>"; };
+		C0CF61FC1DA9C28C00840266 /* ImageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScene.m; sourceTree = "<group>"; };
+		C0CF61FE1DA9C4B900840266 /* IMG_0002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0002.JPG; sourceTree = "<group>"; };
+		C0CF62001DA9C88A00840266 /* gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +108,15 @@
 		C0CF61C71DA93A5D00840266 /* SSCCE */ = {
 			isa = PBXGroup;
 			children = (
+				C0CF61FE1DA9C4B900840266 /* IMG_0002.JPG */,
+				C0CF62001DA9C88A00840266 /* gato.jpg */,
 				C0CF61CB1DA93A5D00840266 /* AppDelegate.h */,
 				C0CF61CC1DA93A5D00840266 /* AppDelegate.m */,
 				C0CF61CE1DA93A5D00840266 /* ViewController.h */,
 				C0CF61CF1DA93A5D00840266 /* ViewController.m */,
 				C0CF61D11DA93A5F00840266 /* Main.storyboard */,
+				C0CF61FB1DA9C28C00840266 /* ImageScene.h */,
+				C0CF61FC1DA9C28C00840266 /* ImageScene.m */,
 				C0CF61D41DA93A5F00840266 /* Assets.xcassets */,
 				C0CF61D61DA93A5F00840266 /* LaunchScreen.storyboard */,
 				C0CF61D91DA93A5F00840266 /* Info.plist */,
@@ -248,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0CF61D81DA93A5F00840266 /* LaunchScreen.storyboard in Resources */,
+				C0CF62011DA9C88A00840266 /* gato.jpg in Resources */,
+				C0CF61FF1DA9C4B900840266 /* IMG_0002.JPG in Resources */,
 				C0CF61D51DA93A5F00840266 /* Assets.xcassets in Resources */,
 				C0CF61D31DA93A5F00840266 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CF61FD1DA9C28C00840266 /* ImageScene.m in Sources */,
 				C0CF61D01DA93A5D00840266 /* ViewController.m in Sources */,
 				C0CF61CD1DA93A5D00840266 /* AppDelegate.m in Sources */,
 				C0CF61CA1DA93A5D00840266 /* main.m in Sources */,

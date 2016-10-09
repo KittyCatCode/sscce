@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageScene.h
 //  SSCCE
 //
 //  Created by Gabriel Pulido on 10/8/16.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
-@interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet SKView *spriteKitView;
+@interface ImageScene : SKScene
 
 @end
-

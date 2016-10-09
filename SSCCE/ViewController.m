@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ImageScene.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidLayoutSubviews {
+    ImageScene* scene = [[ImageScene alloc] initWithSize:self.view.frame.size];
+    scene.scaleMode=SKSceneScaleModeResizeFill;
+    [self.spriteKitView presentScene:scene];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
